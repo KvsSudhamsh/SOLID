@@ -24,10 +24,14 @@ class Shape:
 
 class Shape(ABC):
     def __init__(self, shape_type):
-        self.shape_type == self.shape_type
+        self.shape_type == shape_type
 
     @abstractmethod
     def calculate_area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
         pass
 
 class Circle(Shape):
